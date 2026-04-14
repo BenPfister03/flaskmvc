@@ -37,6 +37,6 @@ dev = [
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["app*"]
+[tool.setuptools]
+packages = ["app"]
+package-dir = {"" = "."}
